@@ -1,0 +1,84 @@
+{
+  "name": "webpack-5-ie11",
+  "version": "0.0.2",
+  "description": "Home for Federated Modules",
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "sideEffects": false,
+  "author": "Steven Matchett",
+  "license": "ISC",
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "directories": {
+    "lib": "lib",
+    "src": "src"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "react": "16.x.x",
+    "react-dom": "16.x.x",
+    "styled-components": "5.0.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "yarn lint --quiet && jest --env=jsdom --coverage --passWithNoTests",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.8.3",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/plugin-transform-object-assign": "7.8.3",
+    "@babel/plugin-transform-react-constant-elements": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.8.3",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "7.8.3",
+    "@welldone-software/why-did-you-render": "4.0.4",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.8.0",
+    "babel-loader": "8.0.6",
+    "babel-plugin-react-remove-properties": "0.3.0",
+    "babel-plugin-transform-dev-warning": "0.1.1",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "command-line-args": "^5.1.1",
+    "cross-env": "7.0.2",
+    "eslint-plugin-cypress": "^2.11.1",
+    "html-webpack-plugin": "^4.4.1",
+    "jest": "24.8.0",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "1.19.1",
+    "react": "16.x.x",
+    "react-dom": "16.x.x",
+    "size-limit": "^4.5.2",
+    "styled-components": "5.0.1",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "3.11.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
